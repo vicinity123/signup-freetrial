@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  background-color: var(--red);
+  background-image: url(../images/bg-intro-desktop.png);
+  color: white;
+  padding: 1.15em;
+}
+
+header {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+header h2.title {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+header h5.description {
+  margin: 1em 0;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+main section.try-it button.try-it-btn {
+  display: block;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 0.7em;
+  width: 85vw;
+  height: 16vh;
+  font-family: Poppins, sans-serif;
+  color: white;
+  margin: 2.3em auto 1.2em;
+  line-height: 1.85em;
+  -webkit-box-shadow: 0 5px 4px 2px rgba(54, 54, 54, 0.5);
+          box-shadow: 0 5px 4px 2px rgba(54, 54, 54, 0.5);
+}
+
+main section.try-it button.try-it-btn span {
+  font-weight: bold;
+}
+
+main section.input-area {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 0.7em;
+  color: black;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+main section.input-area .input-el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.25em;
+  width: 100%;
+  height: 9vh;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 0.78em;
+  border-radius: 0.4em;
+  border: solid 1px rgba(54, 54, 54, 0.5);
+  padding: 1.3em;
+}
+
+main section.input-area .input-el #name-first {
+  margin: 0.5em auto;
+}
+
+main section.input-area button.claim {
+  width: 100%;
+  height: 9vh;
+  background-color: var(--green);
+  border: none;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: 1.04em;
+  border-radius: 0.45em;
+  -webkit-box-shadow: 0 3px 0 0 rgba(56, 204, 140, 0.9);
+          box-shadow: 0 3px 0 0 rgba(56, 204, 140, 0.9);
+}
+
+main section.input-area button.claim:active {
+  background-color: rgba(56, 204, 140, 0.88);
+}
+
+main section.input-area .terms-services {
+  font-size: 0.75em;
+  text-align: center;
+  line-height: 1.65em;
+  color: rgba(54, 54, 54, 0.65);
+}
+
+main section.input-area .terms-services span {
+  color: var(--red);
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (min-width: 850px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header-box main-box" "footer-box footer-box";
+    grid-column-gap: 5em;
+    margin: 4vh 4vw;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header-box;
+    font-size: 1.05em;
+  }
+  main {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: main-box;
+    font-size: 1.4em;
+  }
+  main section.try-it button.try-it-btn {
+    width: 50vw;
+    font-size: 0.78em;
+  }
+  main section.input-area {
+    width: 50vw;
+  }
+  footer {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: footer-box;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
